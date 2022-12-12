@@ -1,0 +1,26 @@
+{
+  "name": "openai-wabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaelahda/openai-wabot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaelahda/openai-wabot/issues"
+  },
+  "homepage": "https://github.com/yaelahda/openai-wabot#readme",
+  "dependencies": {
+    "openai": "^3.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "sastrawijs": "^1.0.4",
+    "whatsapp-web.js": "^1.18.4"
+  }
+}
