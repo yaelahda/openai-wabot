@@ -28,6 +28,7 @@ client.on('message', async (message) => {
         const ishalo = await ucaphalo(body)
         let contact = await message.getContact();
         await client.sendSeen(from) 
+	//if (Spamchat) {.... this is Premium features (contact owner)
         if (isCmd) {
             console.log(`[CMD] From (${contact.pushname}) ~> ${message.body}`)
         } else if (ishalo) {
