@@ -11,6 +11,7 @@ cd openai-wabot
 npm install
 npm start
 ```
+Note: Edit index.js file (line 4) & input your API Key (get your API key https://beta.openai.com/account/api-keys)
 
 ## Install google chrome stable (Linux):
 ```bash
