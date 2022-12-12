@@ -6,10 +6,10 @@ Simple Whatsapp Bot with OpenAI API
 
 ## Install
 ```bash
-git clone https://github.com/yaelahda/openai-wabot
-cd openai-wabot
-npm install
-npm start
+$ git clone https://github.com/yaelahda/openai-wabot
+$ cd openai-wabot
+$ npm install
+$ npm start
 ```
 Note: Edit index.js file (line 4) & input your API Key (get your API key https://beta.openai.com/account/api-keys)
 
