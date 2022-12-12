@@ -21,5 +21,5 @@ Note: Edit index.js file (line 4) & input your API Key (get your API key https:/
 
 ## Dependencies
 - [pedroslopez/whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) - WhatsApp Web Api
-- [OpenAI](https://github.com/openai/openai-node) - OpenAI API
+- [OpenAI](https://github.com/openai/openai-node) - OpenAI-Node
 
