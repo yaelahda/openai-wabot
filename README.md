@@ -1,6 +1,8 @@
 # openai-wabot
 Simple Whatsapp Bot with OpenAI API
 
+For Baileys Version [click here](https://trakteer.id/yaelahda/showcase/baileys-openai-whatsappbot-9Bt0l)
+
 ![openai-wabot](./A077A5B6-0D60-4508-AFF6-6E75E3655096.jpeg)
 
 
