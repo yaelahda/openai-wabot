@@ -7,6 +7,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 let { ucaphalo } = require('./lib')
+let { ucapthanks } = require('./lib')
 const client = new Client({
   puppeteer: {
 		args: ['--no-sandbox'],
@@ -26,6 +27,7 @@ client.on('message', async (message) => {
         const isCmd = body.startsWith(prefix);
         const args = body.trim().split(/ +/).slice(1);
         const ishalo = await ucaphalo(body)
+		const isthanks = await ucapthanks(body)
         let contact = await message.getContact();
         await client.sendSeen(from) 
 	//if (Spamchat) {.... this is Premium features (contact owner)
@@ -33,7 +35,10 @@ client.on('message', async (message) => {
             console.log(`[CMD] From (${contact.pushname}) ~> ${message.body}`)
         } else if (ishalo) {
             message.reply("hai, ada yang bisa bot bantu?");
-        } else if (args.length < 2) {
+        } else if (isthanks) {
+	    message.reply("sama-sama, semoga harimu menyenangkan :)");
+	}
+	  else if (args.length < 2) {
             message.reply("Maaf, tolong kasih bot pertanyaan lebih detail & spesifik lagi :)");
         } else if (!chat.isGroup) {
             const response = await openai.createCompletion({
