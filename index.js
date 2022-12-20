@@ -36,9 +36,9 @@ client.on('message', async (message) => {
         } else if (ishalo) {
             message.reply("hai, ada yang bisa bot bantu?");
         } else if (isthanks) {
-			message.reply("sama-sama, semoga harimu menyenangkan :)");
-		}
-		else if (args.length < 2) {
+	    message.reply("sama-sama, semoga harimu menyenangkan :)");
+	}
+	  else if (args.length < 2) {
             message.reply("Maaf, tolong kasih bot pertanyaan lebih detail & spesifik lagi :)");
         } else if (!chat.isGroup) {
             const response = await openai.createCompletion({
